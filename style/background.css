@@ -1,0 +1,21 @@
+.gradient {
+    background: rgb(26, 108, 117);
+    background: linear-gradient(113deg, rgba(26, 108, 117, 1) 4%, rgba(12, 61, 111, 1) 8%, rgba(3, 9, 21, 1) 100%);
+    background-size: 300%;
+    background-position: left;
+    /* transition: background-position 1s; */
+    animation: moveGrad 30s infinite;
+
+}
+
+@keyframes moveGrad {
+    0% {
+        background-position: left;
+    }
+    50%{
+        background-position: right;
+    }
+    100%{
+        background-position: left;
+    }
+}

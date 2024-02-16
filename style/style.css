@@ -1,0 +1,19 @@
+@import url('background.css');
+
+@import url('output.css');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    min-height: 50vh;
+    margin: 100px 0 ;
+}
+
