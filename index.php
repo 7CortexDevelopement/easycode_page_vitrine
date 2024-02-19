@@ -21,7 +21,7 @@
 
 <body class="gradient">
   <?php include("Components/header.php") ?>
-  <div class="md:container md:mx-auto">
+  <div class="sm:container md:container md:mx-auto">
 
     <?php include("Components/hero.php") ?>
     <?php include("Components/timeline.php") ?>

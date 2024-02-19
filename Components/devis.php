@@ -1,6 +1,6 @@
 <?php 
 $error = false;
-$message = "Notre équipe a bien réceptionné votre message ";
+$msg = "Notre équipe a bien réceptionné votre message ";
 
 function envoyerEmail($destinataire, $sujet, $message, $expediteur ) {
     // En-têtes du message
@@ -30,7 +30,7 @@ if (isset($_POST['contact'])) {
     if (!envoyerEmail($destinataire, $sujet, $message, $expediteur)) {
         
         $error = true;
-        $message = "Une erreur est survenue lors de l'envoi de votre message.";
+        $msg = "Une erreur est survenue lors de l'envoi de votre message.";
     };
 }
 
@@ -47,7 +47,7 @@ if (isset($_POST['contact'])) {
     </div>
     <div class="ms-2">
       <div class="text-sm font-medium">
-        <?php echo $message ?>
+        <?php echo $msg ?>
       </div>
     </div>
     <div class="ps-3 ms-auto">
