@@ -1,8 +1,9 @@
-<?php 
+<?php
 $error = false;
 $msg = "Notre équipe a bien réceptionné votre message ";
 
-function envoyerEmail($destinataire, $sujet, $message, $expediteur ) {
+function envoyerEmail($destinataire, $sujet, $message, $expediteur)
+{
     // En-têtes du message
     $headers = "From: $expediteur\r\n";
     $headers .= "Reply-To: $expediteur\r\n";
@@ -23,12 +24,12 @@ if (isset($_POST['contact'])) {
 
     $destinataire = 'contact@easy-code.ch';
     $sujet = "Demande de devis easycode";
-    $message = '<p>Email de l\'expéditeur : ' . $_POST['email'] . '</p><p>Téléphone : ' . $_POST['phone'] .'<p>Nom : ' . $_POST['nom'] . '</p><p>Ville : ' . $_POST['ville'] . '</p><p>' . $_POST['msg'] . '</p>';
+    $message = '<p>Email de l\'expéditeur : ' . $_POST['email'] . '</p><p>Téléphone : ' . $_POST['phone'] . '<p>Nom : ' . $_POST['nom'] .' '.$_POST['prenom']. '</p><p>Ville : ' . $_POST['ville'] . '</p><p>' . $_POST['msg'] . '</p>';
     $expediteur = $_POST['email'];
 
 
     if (!envoyerEmail($destinataire, $sujet, $message, $expediteur)) {
-        
+
         $error = true;
         $msg = "Une erreur est survenue lors de l'envoi de votre message.";
     };
@@ -40,26 +41,32 @@ if (isset($_POST['contact'])) {
 
 ?>
 
-<div id="dismiss-alert" class="fixed bottom-2 right-2  hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 bg-teal-50 border border-teal-200 text-sm text-teal-800 rounded-lg p-4  <?php echo $error ?  "dark:bg-red-800 dark:border-red-900 dark:text-white" : " dark:bg-teal-800 dark:border-teal-900 dark:text-white" ?>" role="alert">
-  <div class="flex">
-    <div class="flex-shrink-0">
-      <svg class="flex-shrink-0 size-4 text-blue-600 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+    <div id="dismiss-alert" class="fixed bottom-2 right-2  hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 bg-teal-50 border border-teal-200 text-sm text-teal-800 rounded-lg p-4  <?php echo $error ?  "dark:bg-red-800 dark:border-red-900 dark:text-white" : " dark:bg-teal-800 dark:border-teal-900 dark:text-white" ?>" role="alert">
+        <div class="flex">
+            <div class="flex-shrink-0">
+                <svg class="flex-shrink-0 size-4 text-blue-600 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                    <path d="m9 12 2 2 4-4" />
+                </svg>
+            </div>
+            <div class="ms-2">
+                <div class="text-sm font-medium">
+                    <?php echo $msg ?>
+                </div>
+            </div>
+            <div class="ps-3 ms-auto">
+                <div class="-mx-1.5 -my-1.5">
+                    <button type="button" class="inline-flex bg-teal-50 rounded-lg p-1.5 text-teal-500 hover:bg-teal-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-teal-50 focus:ring-teal-600 dark:bg-transparent dark:hover:bg-teal-800/50  dark:text-teal-600" data-hs-remove-element="#dismiss-alert">
+                        <span class="sr-only">Dismiss</span>
+                        <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="ms-2">
-      <div class="text-sm font-medium">
-        <?php echo $msg ?>
-      </div>
-    </div>
-    <div class="ps-3 ms-auto">
-      <div class="-mx-1.5 -my-1.5">
-        <button type="button" class="inline-flex bg-teal-50 rounded-lg p-1.5 text-teal-500 hover:bg-teal-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-teal-50 focus:ring-teal-600 dark:bg-transparent dark:hover:bg-teal-800/50  dark:text-teal-600" data-hs-remove-element="#dismiss-alert">
-          <span class="sr-only">Dismiss</span>
-          <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <?php }
 
@@ -97,18 +104,22 @@ if (isset($_POST['contact'])) {
                             </div>
 
                             <div>
-                                <label for="hs-lastname-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">ville</label>
-                                <input type="text" name="ville" id="hs-lastname-contacts-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                                <label for="hs-firstname-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Prénom</label>
+                                <input type="text" name="prenom" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
                             </div>
+
+
                         </div>
                         <!-- End Grid -->
 
                         <!-- Grid -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+
                             <div>
-                                <label for="hs-email-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Email</label>
-                                <input type="email" name="email" id="hs-email-contacts-1" autocomplete="email" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                                <label for="hs-lastname-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">ville</label>
+                                <input type="text" name="ville" id="hs-lastname-contacts-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
                             </div>
+
 
                             <div>
                                 <label for="hs-phone-number-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Téléphone</label>
@@ -116,6 +127,11 @@ if (isset($_POST['contact'])) {
                             </div>
                         </div>
                         <!-- End Grid -->
+
+                        <div>
+                            <label for="hs-email-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Email</label>
+                            <input type="email" name="email" id="hs-email-contacts-1" autocomplete="email" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                        </div>
 
                         <div>
                             <label for="hs-about-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Message</label>
@@ -128,13 +144,13 @@ if (isset($_POST['contact'])) {
                         <button type="submit" name="contact" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Soumettre</button>
                     </div>
 
-                    
+
                 </form>
             </div>
             <!-- End Card -->
         </div>
 
-        
+
     </div>
     <!-- End Contact Us -->
 </section>

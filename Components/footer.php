@@ -7,7 +7,7 @@
     <!-- End Col -->
 
     <div class="mt-3">
-      <p class="text-gray-500"> Tel +41.78.656.32.19</p>
+      <a class="text-gray-500" href="mailto:contact@easy-code.ch"> contact@easy-code.ch</a>
       <p class="text-gray-500">©  2024 All rights reserved.</p>
     </div>
 
