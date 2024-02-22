@@ -35,7 +35,7 @@
 
     <div class="sm:self-end col-span-12 sm:col-span-5 md:col-span-4 lg:col-span-6">
       <!-- Card -->
-      <a data-aos="zoom-in" class="projet group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="https://easyvent.animation-evenement.ch">
+      <a data-aos="zoom-in" class="projet group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="https://animation-evenement.ch">
         <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
           <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="../Assets/image/easyvent.png" alt="Image Description">
         </div>

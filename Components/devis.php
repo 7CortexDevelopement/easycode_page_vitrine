@@ -21,7 +21,7 @@ function envoyerEmail($destinataire, $sujet, $message, $expediteur ) {
 
 if (isset($_POST['contact'])) {
 
-    $destinataire = 'rubs99rstd@gmail.com';
+    $destinataire = 'contact@easy-code.ch';
     $sujet = "Demande de devis easycode";
     $message = '<p>Email de l\'expéditeur : ' . $_POST['email'] . '</p><p>Téléphone : ' . $_POST['phone'] .'<p>Nom : ' . $_POST['nom'] . '</p><p>Ville : ' . $_POST['ville'] . '</p><p>' . $_POST['msg'] . '</p>';
     $expediteur = $_POST['email'];
