@@ -78,10 +78,10 @@ if (isset($_POST['contact'])) {
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div class="max-w-xl mx-auto">
             <div class="text-center">
-                <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
+                <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white" data-aos="fade-up">
                 <?php echo lang('devis_section_title'); ?>
                 </h1>
-                <p class="mt-1 text-gray-600 dark:text-gray-400">
+                <p class="mt-1 text-gray-600 dark:text-gray-400" data-aos="fade-up">
                 <?php echo lang('devis_section_paragraph'); ?>
                 </p>
             </div>
@@ -89,7 +89,7 @@ if (isset($_POST['contact'])) {
 
         <div class="mt-12 max-w-lg mx-auto">
             <!-- Card -->
-            <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-100">
+            <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-100" data-aos="zoom-in">
                 <h2 class="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
                 <?php echo lang('devis_form_title'); ?>
                 </h2>

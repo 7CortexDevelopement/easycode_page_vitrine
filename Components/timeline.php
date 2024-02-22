@@ -6,7 +6,7 @@
 </style>
 
 <section id="timeline">
-    <h1 data-aos="fade-up" class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center"><?php echo lang('obtenir_devis'); ?></h1>
+    <h1 data-aos="fade-up" class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center"><?php echo lang('header_propos'); ?></h1>
     
     <div class="mt-20 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
 
@@ -40,7 +40,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#fff" viewBox="0 0 256 256"><path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"></path></svg>
                 </div>   -->
                 <!-- Card -->
-                <div data-aos="fade-right" class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-transparent p-4 rounded  md:flex md:flex-col md:items-end">
+                <div data-aos="fade-left" class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-transparent p-4 rounded  md:flex md:flex-col md:items-end">
                     <div class=" flex md:block items-center md:justify-end space-x-2 mb-1">
                         <div class="font-bold text-slate-100 text-2xl md:text-right"><?php echo lang('timeline_title_2'); ?></div>
                     </div>

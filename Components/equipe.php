@@ -60,7 +60,7 @@ $equipe = [
     }
 </style>
 <section id="equipe">
-    <h1 class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center"><?php echo lang('equipe_section_title'); ?></h1>
+    <h1 class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center" data-aos="fade-up"><?php echo lang('equipe_section_title'); ?></h1>
     <div class="swiper">
         <!-- Additional required wrapper -->
         <div>
@@ -74,9 +74,9 @@ $equipe = [
             <?php
             foreach ($equipe as $e) { ?>
 
-                <div class="text-center swiper-slide ">
-                    <img class="rounded-xl sm:size-48  mx-auto" src="<?php echo $e["photo"] ?>" alt="Image Description">
-                    <div class="mt-2 sm:mt-4">
+                <div class="text-center swiper-slide " >
+                    <img class="rounded-xl sm:size-48  mx-auto" src="<?php echo $e["photo"] ?>" alt="Image Description" data-aos="zoom-in">
+                    <div class="mt-2 sm:mt-4" data-aos="zoom-in">
                         <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
                             <?php echo $e["name"] ?>
                         </h3>

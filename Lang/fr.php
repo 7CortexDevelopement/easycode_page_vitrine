@@ -9,12 +9,12 @@ $lang = [
     "header_temoignage" => "Témoignage",
     
 
-    "hero_titre" => "Transformez votre vision en réalité avec notre agence de transformation digital.",
+    "hero_titre" => "Transformez votre vision en réalité avec notre agence de transformation digitale.",
     "hero_paragraphe" => "Des solutions sur mesure pour propulser votre présence en ligne",
 
     
     "timeline_title_1" => "Expert Informatique",
-    "timeline_paragraphe_1" => "Engagez un brillant informaticien. Celui-ci sera dévoué à 100% à votre projet à partir 40.-CHF par jour. Excellence informatique à prix imbattable.",
+    "timeline_paragraphe_1" => "Engagez un brillant informaticien. Celui-ci sera dévoué à 100% à votre projet à partir de 40.-CHF par jour. Excellence informatique à prix imbattable.",
     "timeline_title_2" => "Suivi Personnalisé",
     "timeline_paragraphe_2" => "Notre offre exclusive inclut une séance en visio chaque semaine pour discuter de l'avancement personnalisé de votre projet avec notre expert informatique dédié. Assurez-vous un suivi régulier pour la réussite optimale de vos initiatives.",
     "timeline_title_3" => "Une Opportunité Unique",

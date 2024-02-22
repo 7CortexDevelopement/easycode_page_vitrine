@@ -30,6 +30,8 @@ function lang($key) {
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
 
 
 </head>
@@ -53,11 +55,11 @@ function lang($key) {
     AOS.init({
       // offset: 120, // offset (in px) from the original trigger point
       delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 400, // values from 0 to 3000, with step 50ms
+      duration: 800, // values from 0 to 3000, with step 50ms
       easing: 'ease', // default easing for AOS animations
       once: true, // whether animation should happen only once - while scrolling down
       mirror: false, // whether elements should animate out while scrolling past them
-      anchorPlacement: 'top-center', // defines which position of the element regarding to window should trigger the animation
+      anchorPlacement: 'top-top', // defines which position of the element regarding to window should trigger the animation
 
     });
   </script>
