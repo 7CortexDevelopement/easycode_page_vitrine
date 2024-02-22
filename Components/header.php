@@ -13,11 +13,11 @@
     </div>
     <div id="navbar-alignment" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2">
       <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-        <a class="font-medium text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-white" href="#timeline">A propos</a>
-        <a class="font-medium text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-white" href="#service">Service</a>
-        <a class="font-medium text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-white" href="#projet">Projets</a>
-        <a class="font-medium text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-white" href="#equipe">Equipe</a>
-        <a class="font-medium text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-white" href="#testimony">Témoignage</a>
+        <a class="font-medium text-lg  text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-white" href="#timeline">A propos</a>
+        <a class="font-medium text-lg text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-white" href="#service">Service</a>
+        <a class="font-medium text-lg text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-white" href="#projet">Projets</a>
+        <a class="font-medium text-lg text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-white" href="#equipe">Equipe</a>
+        <a class="font-medium text-lg text-white hover:text-gray-400 dark:text-white dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-white" href="#testimony">Témoignage</a>
     </div>
     </div>
   </nav>
