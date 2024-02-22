@@ -10,7 +10,7 @@
 </style>
 
 <section id="projet">
-<h1 data-aos="fade-up" class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center">NOS REALISATIONS</h1>
+<h1 data-aos="fade-up" class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center"><?php echo lang('projet_section_title'); ?></h1>
 <!-- Masonry Cards -->
 <div class="max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
   <!-- Grid -->
@@ -21,11 +21,11 @@
     <!-- Card -->
       <a data-aos="zoom-in" class="projet  group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="https://www.gestilog.ch">
         <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="../Assets/image/gestilog.png" alt="Image Description">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="Assets/image/gestilog.png" alt="Image Description">
         </div>
         <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4 projet-text">
           <div class="text-sm  font-bold text-gray-800 rounded-lg bg-white p-4 md:text-lg dark:bg-gray-800 dark:text-gray-200">
-            Gestilog , agence immobilière
+          <?php echo lang('projet_title_1'); ?>
           </div>
         </div>
       </a>
@@ -37,11 +37,11 @@
       <!-- Card -->
       <a data-aos="zoom-in" class="projet group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="https://animation-evenement.ch">
         <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="../Assets/image/easyvent.png" alt="Image Description">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="Assets/image/easyvent.png" alt="Image Description">
         </div>
         <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
           <div class="projet-text text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-lg dark:bg-gray-800 dark:text-gray-200">
-            Easyvent , plateforme de mise en relation avec des professionnels de l'évenementiel
+          <?php echo lang('projet_title_2'); ?>
           </div>
         </div>
       </a>
@@ -53,11 +53,11 @@
       <!-- Card -->
       <a data-aos="zoom-in" class=" projet group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="https://7goto.com">
         <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="../Assets/image/7goto.png" alt="Image Description">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="Assets/image/7goto.png" alt="Image Description">
         </div>
         <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
           <div class="projet-text text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
-            7goto , application ERP multimodule 
+          <?php echo lang('projet_title_3'); ?>
           </div>
         </div>
       </a>
@@ -73,7 +73,7 @@
         </div>
         <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
           <div class="projet-text text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
-            Book Connect , application mobile pour échanger des livres 
+          <?php echo lang('projet_title_4'); ?>
           </div>
         </div>
       </a>
@@ -85,11 +85,11 @@
       <!-- Card -->
       <a data-aos="zoom-in" class=" projet group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="https://www.production.7develop.com">
         <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="../Assets/image/blackopal.png" alt="Image Description">
+          <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="Assets/image/blackopal.png" alt="Image Description">
         </div>
         <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
           <div class=" projet-text text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
-            Black Opal , Boutique en ligne
+          <?php echo lang('projet_title_5'); ?>
           </div>
         </div>
       </a>

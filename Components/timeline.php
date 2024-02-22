@@ -6,7 +6,7 @@
 </style>
 
 <section id="timeline">
-    <h1 data-aos="fade-up" class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center">A PROPOS</h1>
+    <h1 data-aos="fade-up" class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center"><?php echo lang('obtenir_devis'); ?></h1>
     
     <div class="mt-20 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
 
@@ -23,9 +23,9 @@
             <!-- Card -->
             <div data-aos="fade-right" class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-transparent p-4 rounded  ">
                 <div class=" flex items-center justify-between space-x-2 mb-1">
-                    <div class="font-bold text-slate-100 text-2xl">Expert Informatique</div>
+                    <div class="font-bold text-slate-100 text-2xl"><?php echo lang('timeline_title_1'); ?></div>
                 </div>
-                <div class="text-slate-400 w-96">Engagez un brillant informaticien. Celui-ci sera dévoué à 100% à votre projet à partir 40.-CHF par jour. Excellence informatique à prix imbattable.</div>
+                <div class="text-slate-400 w-96"><?php echo lang('timeline_paragraphe_1'); ?></div>
             </div>
             
         </div>
@@ -42,9 +42,9 @@
                 <!-- Card -->
                 <div data-aos="fade-right" class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-transparent p-4 rounded  md:flex md:flex-col md:items-end">
                     <div class=" flex md:block items-center md:justify-end space-x-2 mb-1">
-                        <div class="font-bold text-slate-100 text-2xl md:text-right">Suivi Personnalisé</div>
+                        <div class="font-bold text-slate-100 text-2xl md:text-right"><?php echo lang('timeline_title_2'); ?></div>
                     </div>
-                    <div class="text-slate-400 w-96  md:text-right ">Notre offre exclusive inclut une séance en visio chaque semaine pour discuter de l'avancement personnalisé de votre projet avec notre expert informatique dédié. Assurez-vous un suivi régulier pour la réussite optimale de vos initiatives.</div>
+                    <div class="text-slate-400 w-96  md:text-right "><?php echo lang('timeline_paragraphe_2'); ?></div>
                 </div>
                 
             </div>
@@ -61,9 +61,9 @@
                 <!-- Card -->
                 <div data-aos="fade-right" class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-transparent p-4 rounded  ">
                     <div class=" flex items-center justify-between space-x-2 mb-1">
-                        <div class="font-bold text-slate-100 text-2xl">Une Opportunité Unique </div>
+                        <div class="font-bold text-slate-100 text-2xl"><?php echo lang('timeline_title_3'); ?></div>
                     </div>
-                    <div class="text-slate-400 w-96">Saisissez cette opportunité exceptionnelle qui conjugue rapidité, qualité et tarif avantageux. Notre formule imbattable est conçue pour faire progresser votre projet avec une efficacité optimale, tout en maintenant une qualité irréprochable et en respectant votre budget. Ne laissez pas passer cette chance de propulser votre réussite sans compromis.</div>
+                    <div class="text-slate-400 w-96"><?php echo lang('timeline_paragraphe_3'); ?></div>
                 </div>
                 
             </div>

@@ -1,10 +1,25 @@
 <?php
-// phpinfo();
+session_start();
 
+// Définir la langue par défaut (par exemple, le français)
+if (!isset($_GET['lang'])) {
+    $_SESSION['lang'] =  'fr';
+}else{
+  $_SESSION['lang'] =  $_GET['lang'];
+}
+
+// Inclure le fichier de traduction approprié
+include_once('Lang/' . $_SESSION['lang'] . '.php');
+
+// Fonction pour récupérer la traduction d'une clé donnée
+function lang($key) {
+    global $lang;
+    return isset($lang[$key]) ? $lang[$key] : $key;
+}
 ?>
 
 <!DOCTYPE html>
-<html lang="fr" class="dark ">
+<html lang="<?php echo $_SESSION['lang']; ?>" class="dark ">
 
 <head>
   <meta charset="UTF-8">

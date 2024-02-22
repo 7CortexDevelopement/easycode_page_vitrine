@@ -1,6 +1,6 @@
 <?php
 $error = false;
-$msg = "Notre équipe a bien réceptionné votre message ";
+$msg = lang('devis_success_message');
 
 function envoyerEmail($destinataire, $sujet, $message, $expediteur)
 {
@@ -31,7 +31,7 @@ if (isset($_POST['contact'])) {
     if (!envoyerEmail($destinataire, $sujet, $message, $expediteur)) {
 
         $error = true;
-        $msg = "Une erreur est survenue lors de l'envoi de votre message.";
+        $msg = lang('devis_error_message');
     };
 }
 
@@ -79,19 +79,19 @@ if (isset($_POST['contact'])) {
         <div class="max-w-xl mx-auto">
             <div class="text-center">
                 <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
-                    Contactez-nous
+                <?php echo lang('devis_section_title'); ?>
                 </h1>
                 <p class="mt-1 text-gray-600 dark:text-gray-400">
-                    Nous serions ravis de discuter de la manière dont nous pouvons vous aider.
+                <?php echo lang('devis_section_paragraph'); ?>
                 </p>
             </div>
         </div>
 
         <div class="mt-12 max-w-lg mx-auto">
             <!-- Card -->
-            <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700">
+            <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-100">
                 <h2 class="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
-                    Demandez un devis
+                <?php echo lang('devis_form_title'); ?>
                 </h2>
 
                 <form method="POST">
@@ -99,13 +99,13 @@ if (isset($_POST['contact'])) {
                         <!-- Grid -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                             <div>
-                                <label for="hs-firstname-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Nom</label>
-                                <input type="text" name="nom" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                                <label for="hs-firstname-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white"> <?php echo lang('devis_form_nom'); ?></label>
+                                <input type="text" name="nom" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-100 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
                             </div>
 
                             <div>
-                                <label for="hs-firstname-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Prénom</label>
-                                <input type="text" name="prenom" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                                <label for="hs-firstname-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white"> <?php echo lang('devis_form_prenom'); ?></label>
+                                <input type="text" name="prenom" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-100 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
                             </div>
 
 
@@ -116,32 +116,32 @@ if (isset($_POST['contact'])) {
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
 
                             <div>
-                                <label for="hs-lastname-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">ville</label>
-                                <input type="text" name="ville" id="hs-lastname-contacts-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                                <label for="hs-lastname-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white"> <?php echo lang('devis_form_ville'); ?></label>
+                                <input type="text" name="ville" id="hs-lastname-contacts-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-100 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
                             </div>
 
 
                             <div>
-                                <label for="hs-phone-number-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Téléphone</label>
-                                <input type="text" name="phone" id="hs-phone-number-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                                <label for="hs-phone-number-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white"> <?php echo lang('devis_form_telephone'); ?></label>
+                                <input type="text" name="phone" id="hs-phone-number-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-100 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
                             </div>
                         </div>
                         <!-- End Grid -->
 
                         <div>
-                            <label for="hs-email-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Email</label>
-                            <input type="email" name="email" id="hs-email-contacts-1" autocomplete="email" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
+                            <label for="hs-email-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white"> <?php echo lang('devis_form_email'); ?></label>
+                            <input type="email" name="email" id="hs-email-contacts-1" autocomplete="email" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-100 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
                         </div>
 
                         <div>
-                            <label for="hs-about-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Message</label>
-                            <textarea placeholder="Veuillez nous décrire la façon dont nous pouvons vous aider dans les grandes lignes" id="hs-about-contacts-1" name="msg" rows="4" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"></textarea>
+                            <label for="hs-about-contacts-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white"> <?php echo lang('devis_form_message'); ?></label>
+                            <textarea placeholder=" <?php echo lang('devis_form_message_placeholder'); ?>" id="hs-about-contacts-1" name="msg" rows="4" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-100 dark:border-gray-700 dark:text-gray-900 dark:focus:ring-gray-600"></textarea>
                         </div>
                     </div>
                     <!-- End Grid -->
 
                     <div class="mt-6 grid">
-                        <button type="submit" name="contact" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Soumettre</button>
+                        <button type="submit" name="contact" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"> <?php echo lang('devis_form_submit'); ?></button>
                     </div>
 
 

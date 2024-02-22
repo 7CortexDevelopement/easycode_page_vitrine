@@ -2,26 +2,26 @@
 
 $testimony = [
     [
-        "text" => "Un service d’excellence, un accompagnement parfait ! Merci à EASYCODE et son équipe",
+        "text" => lang('temoignage_1'),
         "name" => "Jean Tessier",
-        "pic" => "../Assets/image/client/jean_tessier.webp",
+        "pic" => "Assets/image/client/jean_tessier.webp",
     ],
     [
-        "text" => "Une équipe pro, des développeurs réactif, j’ai réussis à réaliser mon projets",
+        "text" => lang('temoignage_2'),
         "name" => "Louis Moulin",
-        "pic" => "../Assets/image/client/louis_moulin.webp",
+        "pic" => "Assets/image/client/louis_moulin.webp",
     ],
     [
-        "text" => " Mon site e-commerce est créé de manière efficace, super taff",
+        "text" => lang('temoignage_3'),
         "name" => "Marie Lavigne",
-        "pic" => "../Assets/image/client/marie_lavigne.webp",
+        "pic" => "Assets/image/client/marie_lavigne.webp",
     ]
 ]
 
 ?>
 
 <section id="testimony">
-    <h1 class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center">CE QUE PENSE NOS CLIENTS ...</h1>
+    <h1 class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center"><?php echo lang('temoignage_section_title'); ?></h1>
 
     <div class=" mt-20 ">
 

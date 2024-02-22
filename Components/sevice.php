@@ -1,16 +1,16 @@
 <?php 
 $service = [
-    ['title' => 'Créez votre portfolio en ligne', 'desc' => 'Notre application vous aide à créer et à gérer facilement votre portefeuille en ligne, afin de présenter vos compétences et réalisations de manière professionnelle.' ],
-    ['title' => 'Lancez votre site e-commerce', 'desc' => "Créez et gérez votre propre boutique en ligne pour vendre vos produits ou services, avec des fonctionnalités avancées de gestion des stocks, de paiement sécurisé et d' expérience client optimisée." ],
-    ['title' => "Optez pour l'automatisation des tâches ", 'desc' => "Nos solutions de gestion personnalisées offrent des outils avancés pour gérer efficacement les différents aspects de votre entreprise, tels que la gestion de stock, la comptabilité, le suivi des employés et bien plus encore." ],
-    ['title' => "Transformez votre idée en réalité", 'desc' => "Nous sommes là pour concrétiser votre idée personnalisée en une application fonctionnelle et intuitive, répondant parfaitement à vos besoins spécifiques." ]
+    ['title' => lang('service_title_1'), 'desc' => lang('service_desc_1') ],
+    ['title' => lang('service_title_2'), 'desc' => lang('service_desc_2') ],
+    ['title' => lang('service_title_3'), 'desc' => lang('service_desc_3') ],
+    ['title' => lang('service_title_4'), 'desc' => lang('service_desc_4') ]
 ];
 
 ?>
 
 <section id="service">
 
-    <h1 data-aos="fade-up" class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center">NOS SERVICES</h1>
+    <h1 data-aos="fade-up" class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center"><?php echo lang('service_section_title'); ?></h1>
     
     <!-- Card Blog -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
