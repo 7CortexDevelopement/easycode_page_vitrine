@@ -6,21 +6,21 @@ $equipe = [
         "name" => "Kylian Cavagna",
         // "job" =>  lang('equipe_job_1'),
         "linkedin" => "https://www.linkedin.com/in/kylian-cavagna-68216a1b2/",
-        
+
     ],
     [
         "photo" => "Assets/image/equipe/john.jpg",
         "name" => "John Larsson",
         // "job" => lang('equipe_job_1'),
         "linkedin" => "",
-        
+
     ],
     [
         "photo" => "Assets/image/equipe/rubens.png",
         "name" => "Rubens Mensah",
         // "job" => lang('equipe_job_1'),
         "linkedin" => "www.linkedin.com/in/rubens-mensah",
-        
+
     ],
 
 ]
@@ -58,6 +58,20 @@ $equipe = [
     .swiper-button-next:after {
         font-size: 20px !important;
     }
+
+    @media screen and (max-width : 768px) {
+        .swiper-button-prev {
+            right: 50%;
+            left: unset;
+            margin: 0 5px;
+        }
+
+        .swiper-button-next {
+            left: 50%;
+            right: unset;
+            margin: 0 5px;
+        }
+    }
 </style>
 <section id="equipe">
     <h1 class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl  text-center" data-aos="fade-up"><?php echo lang('equipe_section_title'); ?></h1>
@@ -74,15 +88,13 @@ $equipe = [
             <?php
             foreach ($equipe as $e) { ?>
 
-                <div class="text-center swiper-slide " >
+                <div class="text-center swiper-slide px-7 md:px-0">
                     <img class="rounded-xl sm:size-48  mx-auto" src="<?php echo $e["photo"] ?>" alt="Image Description" data-aos="zoom-in">
                     <div class="mt-2 sm:mt-4" data-aos="zoom-in">
                         <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
                             <?php echo $e["name"] ?>
                         </h3>
-                        <!-- <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-                            
-                        </p> -->
+
                         <div class="mt-2 sm:mt-auto space-x-2.5">
 
                             <?php
@@ -99,11 +111,6 @@ $equipe = [
 
                             ?>
 
-                            <!-- <a class="inline-flex justify-center items-center text-white rounded-full hover:text-gray-800 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="<?php echo $e["mail"] ?>">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
-                                    <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path>
-                                </svg>
-                            </a> -->
 
                         </div>
 

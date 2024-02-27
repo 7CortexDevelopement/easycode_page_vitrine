@@ -1,8 +1,11 @@
 .gradient {
     background: rgb(26, 108, 117);
     background: linear-gradient(113deg, rgba(26, 108, 117, 1) 4%, rgba(12, 61, 111, 1) 40%, rgba(3, 9, 21, 1) 100%);
+    /* background: linear-gradient(113deg, rgba(3, 9, 21, 1) 0%, rgba(12, 61, 111, 1) 40%,rgba(26, 108, 117, 1)  100%); */
+/* background-color: #19539A; */
     background-size: 300%;
     background-position: left;
+    /* opacity: 0.4; */
     /* transition: background-position 1s; */
     /* animation: moveGrad 30s infinite; */
 
