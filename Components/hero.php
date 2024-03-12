@@ -15,7 +15,7 @@
     background-image: url('Assets/image/bg.gif');
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -25,12 +25,12 @@
     background-attachment: fixed;
   }
 
-
+/* 
   @media screen and (max-width : 768px) {
     #agua{
       height: 80vh;
     }
-  }
+  } */
 </style>
 
 <div id="agua">

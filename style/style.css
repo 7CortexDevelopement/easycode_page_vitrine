@@ -12,6 +12,10 @@ body{
     box-sizing: border-box;
 }
 
+html, body {  overflow-x: hidden !important; }
+
+
+
 section{
     min-height: 50vh;
     margin: 100px 0 ;

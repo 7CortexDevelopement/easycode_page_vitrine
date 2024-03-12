@@ -36,7 +36,7 @@ function lang($key) {
 
 </head>
 
-<body class="gradient">
+<body class="gradient" >
   <?php include("Components/header.php") ?>
   <div class="sm:container md:container md:mx-auto">
 

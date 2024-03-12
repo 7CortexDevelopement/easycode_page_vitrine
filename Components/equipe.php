@@ -19,7 +19,7 @@ $equipe = [
         "photo" => "Assets/image/equipe/rubens.png",
         "name" => "Rubens Mensah",
         // "job" => lang('equipe_job_1'),
-        "linkedin" => "www.linkedin.com/in/rubens-mensah",
+        "linkedin" => "https://www.linkedin.com/in/rubens-mensah",
 
     ],
 
@@ -122,13 +122,6 @@ $equipe = [
 
             ?>
         </div>
-        <!-- If we need pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
 
-        <!-- If we need navigation buttons -->
-
-
-        <!-- If we need scrollbar -->
-        <!-- <div class="swiper-scrollbar"></div> -->
     </div>
 </section>
