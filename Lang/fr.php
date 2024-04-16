@@ -40,9 +40,9 @@ $lang = [
     "equipe_section_title" => "NOTRE EQUIPE",
     "equipe_job_1" => "Chef de projets digitaux",
 
-    "temoignage_section_title" => "CE QUE PENSE NOS CLIENTS ...",
+    "temoignage_section_title" => "CE QUE PENSENT NOS CLIENTS ...",
     "temoignage_1" => "Un service d’excellence, un accompagnement parfait ! Merci à EASYCODE et son équipe",
-    "temoignage_2" => "Une équipe pro, des développeurs réactif, j’ai réussis à réaliser mon projets",
+    "temoignage_2" => "Une équipe pro, des développeurs réactifs, j’ai réussi à réaliser mon projets",
     "temoignage_3" => "Mon site e-commerce est créé de manière efficace, super taff",
     
     "devis_section_title" => "Contactez-nous",
